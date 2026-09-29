@@ -1,9 +1,3 @@
-/* ===========================================================
-   CCS Department Enrollment Form
-   Palette: #FF5A1F (primary) · #FF9F68 (secondary)
-            #FFD9B3 (tint) · #2B2A27 (ink) · #F5F1EA (paper)
-   =========================================================== */
-
 :root {
   --primary: #ff5a1f;
   --secondary: #ff9f68;
@@ -37,6 +31,8 @@ body {
 main {
   max-width: 980px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 28px;
   align-items: start;
 }
@@ -66,12 +62,8 @@ h2 {
   box-shadow: var(--shadow);
 }
 
+.form-panel,
 .card-panel {
-  margin-top: 20px;
-  display: none;
-}
-
-.form-panel {
   border-top: 4px solid var(--primary);
 }
 
